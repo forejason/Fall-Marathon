@@ -22,7 +22,6 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.btnDetail = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.picMarathon = New System.Windows.Forms.PictureBox()
@@ -52,7 +51,9 @@ Partial Class Main
         '
         'picMarathon
         '
-        Me.picMarathon.Image = CType(resources.GetObject("picMarathon.Image"), System.Drawing.Image)
+        Me.picMarathon.BackgroundImage = Global.Fall_Marathon.My.Resources.Resources.Marathon
+        Me.picMarathon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picMarathon.Image = Global.Fall_Marathon.My.Resources.Resources.Marathon
         Me.picMarathon.Location = New System.Drawing.Point(128, 107)
         Me.picMarathon.Name = "picMarathon"
         Me.picMarathon.Size = New System.Drawing.Size(662, 444)
