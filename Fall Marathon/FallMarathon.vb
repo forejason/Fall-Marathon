@@ -1,4 +1,10 @@
-﻿Public Class Main
+﻿' Program: Fall Marathon
+' Author:   Jason Fore
+' Date:     September 20, 2019
+' Purpose:  This application displays details about the Fall Marathon's 
+'time,place,and date.
+'         
+Public Class Main
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Close()
